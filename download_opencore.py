@@ -11,11 +11,11 @@ try:
     from cStringIO import StringIO as BytesIO
 except ImportError:
     from io import BytesIO
+from zipfile import ZipFile
 # Third-party libraries.
 import click
 from pycdlib import PyCdlib
 import requests
-from zipfile import ZipFile
 
 @click.command(
     help="downloads the specified version of OpenCore"
